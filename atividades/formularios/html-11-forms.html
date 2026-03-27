@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form action="https://httpbin.org/post" method="post" >
+        <fieldset>
+            <legend> Dados básicos </legend>
+            <label for="name"> Nome: </label>
+            <input type="text" id="name" name="userName" value="Fulano" required>
+            <br>
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="userEmail" value="Fulano@gmail.com" required>
+            <br>
+            <label for="password"> Senha: </label>
+            <input type="password" id="password" name="userPassword" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Quais tecnologias web te interessam?</legend>
+            <input type="checkbox" id="html-check" name="tecnologias" value="HTML" checked>
+            <label for="html-check"> HTML </label>
+            <br>
+
+            <input type="checkbox" id="css-check" name="tecnologias" value="CSS" checked>
+            <label for="css-check">CSS</label>
+            <br>
+
+            <input type="checkbox" id="js-check" name="tecnologias" value="JavaScript">
+            <label for="js-check">JavaScript</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Você é de Esperança?</legend>
+            <input type="radio" id="local-check" name="esperanca" value="Sim">
+            <label for="local-check"> Sim </label>
+            <br>
+            <input type="radio" id="nolocal-check" name="esperanca" value="Nao" checked>
+            <label for="nolocal-check"> Não </label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
